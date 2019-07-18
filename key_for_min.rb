@@ -11,8 +11,6 @@ key = []
     elsif i > value
       i = value
       key = name
-    else
-      return nil
     end
   end
   key
