@@ -3,12 +3,15 @@
 
 def key_for_min_value(name_hash)
 i = 0
+key = ""
   name_hash.each do |name, value|
     if i == 0
       i = value
+      key = name
     elsif i > value
       i = value
+      key = name
     end
   end
-  i
+  key
 end
